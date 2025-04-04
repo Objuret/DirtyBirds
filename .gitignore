@@ -1,0 +1,21 @@
+# Bygg-outputs
+/dist
+
+# Node modules
+/node_modules
+
+# Lokala miljöfiler
+.env
+.env.*
+
+# OS-specifik skräp
+.DS_Store
+Thumbs.db
+
+# Editor/IDE-filer
+.vscode/
+.idea/
+
+# Oanvända filer (ej versionering)
+/src/assets/library/
+/src/components/library/
