@@ -4,30 +4,60 @@
 // The component styles are used in conjunction with the theme provider to apply the styles globally across the application.
 // The styles are defined using the MUI system, allowing for easy customization and theming.
 
+// src/theme/components.ts
 import { Components, Theme } from '@mui/material/styles';
 
 export const components: Components<Theme> = {
   MuiPaper: {
     styleOverrides: {
       root: {
-        backgroundImage: 'url("/textures/parchment.png")',
-        boxShadow: '0 0.125rem 0.5rem rgba(0, 0, 0, 0.15)',
+        backgroundImage: 'url("../assets/images/backgrounds/papir.png")',
+        boxShadow: '0 0.125rem 0.5rem ${theme.palette.secondary.dark}40',
         borderRadius: '0.25rem',
-        border: '1px solid', // Border width in px is standard
+        border: '1px solid',
         borderColor: 'primary.main',
       },
     },
   },
   MuiButton: {
     styleOverrides: {
-      root: {
+      root: ({theme}) => ({
         borderRadius: '0.125rem',
         textTransform: 'none',
         fontWeight: 700,
+        boxShadow: `0 0.125rem 0.25rem ${theme.palette.primary.main}40`,
+      }),
+    },
+  },
+  MuiCard: {
+    styleOverrides: {
+      root: ({ theme }) => ({
+        borderRadius: '0.25rem',
+        border: `1px solid ${theme.palette.primary.main}40`,
+        transition: 'transform 0.2s, box-shadow 0.2s',
+        '&:hover': {
+          transform: 'scale(1.02)',
+          boxShadow: `0 4px 10px ${theme.palette.secondary.main}40`,
+        },
+        overflow: 'hidden',
+      }),
+    },
+  },
+  MuiCardContent: {
+    styleOverrides: {
+      root: {
+        padding: '16px',
+        '&:last-child': {
+          paddingBottom: '16px',
+        }
       },
-      containedPrimary: {
-        boxShadow: '0 0.125rem 0.25rem rgba(139, 0, 0, 0.25)',
-      },
+    },
+  },
+  MuiCardMedia: {
+    styleOverrides: {
+      root: ({ theme }) => ({
+        borderBottom: `1px solid ${theme.palette.primary.main}20`,
+      }),
     },
   },
 };

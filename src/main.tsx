@@ -12,7 +12,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-// import '@fontsource/merriweather/700.css';
+import '@fontsource/merriweather/700.css';
 import '@fontsource/cinzel/700.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
