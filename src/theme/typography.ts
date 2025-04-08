@@ -11,8 +11,18 @@ export const typography = {
         fontSize: '3.5rem',
       },
     },
+    // h2: {
+    //   fontFamily: '"Merriweather", "Times New Roman", serif',
+    //   fontWeight: 700,
+    //   fontSize: '2rem',
+    //   lineHeight: 1.2,
+    //   letterSpacing: '-0.00833em',
+    //   '@media (min-width:600px)': {
+    //     fontSize: '2.75rem',
+    //   },
+    // },
     h2: {
-      fontFamily: '"Merriweather", "Times New Roman", serif',
+      fontFamily: '"Cinzel", serif',
       fontWeight: 700,
       fontSize: '2rem',
       lineHeight: 1.2,
@@ -21,7 +31,6 @@ export const typography = {
         fontSize: '2.75rem',
       },
     },
-    // Add other typography styles as needed
   };
   
   export default typography;

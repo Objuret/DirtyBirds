@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/layout/Layout' // Updated path
+import Layout from './components/layout/Layout'
 import Home from './views/Home'
 import Events from './views/Events'
 
